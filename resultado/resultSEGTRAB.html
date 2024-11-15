@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="img/Teste-vocacional.ico">
+    <title>Resultado 2</title>
+    <link rel="stylesheet" href="result.css">
+    <style>
+        /* Adicione estilos básicos para visualização */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .btn-navigate {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #13446a;
+            color: white;
+            border: none;
+            border-radius: 5px; 
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .btn-navigate:hover {
+            background-color: #0366cf;
+        }
+    </style>
+</head>
+<body> 
+    <div id="page-content">
+        <div class="left-title">SEGURANÇA DO TRABALHO</div>
+        
+        <div class="image-container2">
+            <img src="../img/ursoresult.png" alt="Iceberg com o urso mascote">
+        </div>
+
+        <div class="result2-container">
+            <div class="result2">
+                <div class="result2-header">
+                    <ul class="nav nav-tabs result2-header-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="true" href="#content1" onclick="showContent('content1')">Perfil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#content2" onclick="showContent('content2')">Campo 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#content3" onclick="showContent('content3')">Campo 2</a>
+                        </li>
+                    </ul>
+                </div> 
+                <div class="result2-body"> 
+                    <div id="content1" class="tab-content">
+                        <h5 class="result2-title">Guardião da Justiça</h5>
+                        <p class="result2-text">Você sempre procura ser ético e justo, você tem facilidade para analisar situações 
+                            e encontrar soluções que garantam a
+                            segurança e o bem-estar de todos.
+                            Você é o tipo de pessoa que se preocupa em seguir as regras e garantir que tudo funcione de acordo, 
+                            além de resolver conflitos de maneira calma e justa.<br><br>
+                            
+                            <strong> Habilidades:</strong> <br>
+                            
+                            - Ética<br>
+                            - Justiça<br>
+                            - Análise crítica<br>
+                            - Resolução de conflitos<br>
+                            - Confiável<br>
+                            Você é um exemplo de integridade e confiabilidade. Sua capacidade de tomar decisões difíceis com 
+                            ética e justiça te torna um líder natural, capaz de inspirar confiança e respeito em seus colegas. 
+                            Sua busca constante por soluções justas 
+                            e equitativas contribui para um ambiente de trabalho mais harmonioso e produtivo. </div>
+                    <div id="content2" class="tab-content" style="display: none;">
+                        <h5 class="result2-title">Segurança do Trabalho</h5>
+                        <p class="result2-text"><strong> Seu curso mais compatível é o de Segurança do Trabalho!</strong>
+<br>
+                            Esse curso é ideal para quem se preocupa com a saúde e a segurança das pessoas e quer contribuir para um
+                             ambiente de trabalho mais seguro e saudável.<br>
+                             <br>
+                            Ingressando na ETEC, você aprenderá sobre:<br>
+                            
+                           - Identificação de riscos<br>
+                           - Prevenção de acidentes<br>
+                           - Ergonomia<br>
+                           - Saúde ocupacional<br>
+                           - Legislação trabalhista<br>
+                            Você estará preparado para garantir a segurança e o bem-estar dos trabalhadores em diversos 
+                            ambientes, desde fábricas até escritórios. Você aprenderá a identificar riscos, prevenir acidentes e implementar medidas de segurança, tornando-se um profissional 
+                            essencial para qualquer empresa que valorize a saúde e a integridade de seus colaboradores.  </div>
+                    <div id="content3" class="tab-content" style="display: none;">
+                        <h5 class="result2-title">Serviços Jurídicos</h5>
+                        <p class="result2-text"><strong>Você também pode se interessar por Serviços Jurídicos!</strong>
+                            <br>
+                                                        Esse curso é ideal para quem tem interesse em direito e busca uma formação sólida para atuar na área jurídica.<br>
+                                                        <br>
+                                                        Ingressando na ETEC, você aprenderá sobre:<br>
+                                                        
+                                                       - Direito Processual<br>
+                                                       - Legislação<br>
+                                                       - Direito Empresarial<br>
+                                                       - Direito do Consumidor<br>
+                                                       - Direito do Trabalho<br>
+                                                       Você estará apto a atuar em diversas áreas do Direito, como em escritórios de advocacia, departamentos jurídicos de empresas
+                                                     e organizações não governamentais. Você poderá auxiliar advogados em suas atividades, prestar consultoria jurídica interna em empresas, 
+                                                     contribuir para a resolução de 
+                                                       conflitos e oferecer apoio jurídico em causas sociais.  </div>
+                                                
+                </div>
+            </div>
+        </div>
+
+        <a href="#" class="btn-navigate" onclick="alterarConteudo()">Conheça as áreas de atuação!</a>
+    </div>
+
+    <script>
+        function showContent(id) {
+            // Esconde todos os conteúdos
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => content.style.display = 'none');
+            
+            // Mostra o conteúdo selecionado
+            document.getElementById(id).style.display = 'block';
+        }
+
+        function alterarConteudo() {
+            const novoConteudo = `
+                <div class="left-block">
+                    <h2>Aqui estão duas áreas que você poderá atuar futuramente: </h2>
+                </div> 
+
+                <div class="content">
+                    <div class="result1">
+                        <img src="../img/ergo.png" alt="Imagem 1" class="result1-img-top">
+                        <div class="result1-body">
+                            <h3 class="result1-title">Consultoria em Ergonomia</h3>
+                            <p class="result1-text">Fazem análise de ambientes de trabalho e sugerem mudanças para torná-los mais confortáveis e seguros. 
+                                Isso ajuda a prevenir lesões e melhorar a produtividade dos funcionários. </p>
+                        </div>
+                    </div>
+
+                    <div class="result1">
+                        <img src="../img/gestão.png" alt="Imagem 2" class="result1-img-top">
+                        <div class="result1-body">
+                            <h3 class="result1-title">Gestão de Saúde Ocupacional</h3>
+                            <p class="result1-text">É responsável por cuidar da saúde dos trabalhadores dentro das empresas. 
+                                Ele cria programas para prevenir doenças e acidentes no ambiente de trabalho, garantindo que todos estejam seguros.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Botão no canto inferior direito -->
+                <button class="btn-redirect" onclick="window.location.href='../resultado/vestibulinho.html'">Conheça o Vestibulinho!</button>
+            `;
+
+            // Atualiza o conteúdo da página
+            document.getElementById('page-content').innerHTML = novoConteudo;
+        }
+
+        document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', function() {
+        // Remove a classe 'active' de todos os links
+        document.querySelectorAll('.nav-link').forEach(navLink => {
+            navLink.classList.remove('active');
+        });
+
+        // Adiciona a classe 'active' ao link clicado
+        this.classList.add('active');
+    });
+});
+
+    </script>
+     <script src="script.js"></script>
+</body>
+</html>

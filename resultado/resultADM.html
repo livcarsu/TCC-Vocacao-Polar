@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="img/Teste-vocacional.ico">
+    <title>Resultado 2</title>
+    <link rel="stylesheet" href="result.css">
+    <style>
+        /* Adicione estilos básicos para visualização */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .btn-navigate {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #13446a;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .btn-navigate:hover {
+            background-color: #0366cf;
+        } 
+    </style>
+</head>
+<body>
+    <div id="page-content">
+        <div class="left-title">ADMINISTRAÇÃO</div>
+        
+        <div class="image-container2">
+            <img src="../img/ursoresult.png" alt="Iceberg com o urso mascote">
+        </div>
+
+        <div class="result2-container">
+            <div class="result2">
+                <div class="result2-header">
+                    <ul class="nav nav-tabs result2-header-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="true" href="#content1" onclick="showContent('content1')">Perfil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#content2" onclick="showContent('content2')">Campo 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#content3" onclick="showContent('content3')">Campo 2</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="result2-body">
+                    <div id="content1" class="tab-content">
+                        <h5 class="result2-title">Visionário Estratégico</h5>
+                        <p class="result2-text">
+                            Você é o tipo de estudante que gosta de pensar no futuro e guiar seus colegas para alcançar metas, conectando pessoas e ideias de forma eficiente, sempre buscando novas oportunidades e estratégias.<br>
+                            <br><strong> Habilidades: </strong><br>
+                            - Liderar equipes<br>
+                            - Negociar<br>
+                            - Enxergar o "panorama geral"<br>
+                            - Resolver problemas com facilidade<br>
+                            - Comunicativo <br>
+                            - Conselheiro   <br>
+                            Você é um líder nato com um grande potencial. Possui habilidades excepcionais para inspirar e unir pessoas, além de uma visão estratégica que te permite construir projetos de sucesso. Sua paixão por desafios e sua capacidade de motivar outros fazem de você um profissional promissor em diversas áreas.
+                             </p>
+                    </div>
+                    <div id="content2" class="tab-content" style="display: none;">
+                        <h5 class="result2-title">Administração</h5>
+                        <p class="result2-text">
+                          <strong> Seu curso mais compatível é o de Administração!</strong> 
+                            <br>Esse curso é ideal para quem deseja entender como gerir empresas e quer aprender a gerenciar negócios. <br>
+<br>
+                            Ingressando na ETEC você aprenderá sobre:<br>
+                            - Finanças<br>
+                            - Recursos humanos<br>
+                            - Marketing  <br>
+                            - Planejamento estratégico<br>
+
+                            
+                            Você poderá atuar em empresas de todos os portes, desde pequenas startups até grandes corporações. Suas habilidades abrangerão diversas áreas da gestão empresarial, como análise financeira, liderança de equipes, criação de estratégias de marketing e planejamento de longo prazo. 
+                            Você estará preparado para tomar decisões estratégicas e contribuir para o sucesso de qualquer organização.<br>
+                          
+                            
+
+                    </div>
+                    <div id="content3" class="tab-content" style="display: none;">
+                        <h5 class="result2-title">Comércio Exterior</h5>
+                        <p class="result2-text"><strong> Você também pode se interessar por Comércio Exterior!</strong><br>
+
+                             Esse curso é perfeito para quem tem interesse em as coisas funcionam além das fronteiras e
+                              querem aprender a negociar no mercado global.<br>
+                             <br>
+                            Ingressando na ETEC, você vai aprender sobre:<br>
+                            
+                            - Economia global<br>
+                            - Logística internacional<br>
+                            - Direito internacional<br>
+                            - Culturas diferentes<br>
+                            Você vai estudar como organizar, planejar e executar operações de importação e exportação, além de analisar os impactos das decisões tomadas no desempenho da empresa.
+                            
+</div>
+                        </div>
+            </div>
+        </div>
+
+        <a href="#" class="btn-navigate" onclick="alterarConteudo()">Conheça as áreas de atuação!</a>
+    </div>
+
+    <script>
+        function showContent(id) {
+            // Esconde todos os conteúdos
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => content.style.display = 'none');
+            
+            // Mostra o conteúdo selecionado
+            document.getElementById(id).style.display = 'block';
+        }
+
+        function alterarConteudo() {
+            const novoConteudo = `
+                <div class="left-block">
+                    <h2>Aqui estão duas áreas que você poderá atuar futuramente: </h2>
+                </div> 
+ 
+                <div class="content">
+                    <div class="result1">
+                        <img src="../img/empreend.png" alt="Imagem 1" class="result1-img-top">
+                        <div class="result1-body">
+                            <h3 class="result1-title">Empreendedorismo</h3>
+                            <p class="result1-text">   Empreender é sobre criar negócios, inovar e transformar ideias em realidade.<br>
+                                 É uma área pra quem enxerga oportunidades, gosta de desafios e busca fazer a diferença,
+                                 combinando criatividade com estratégia.  </p>
+                        </div>
+                    </div>
+
+                    <div class="result1">
+                        <img src="../img/consul.png" alt="Imagem 2" class="result1-img-top">
+                        <div class="result1-body">
+                            <h3 class="result1-title">Consultoria Empresarial</h3>
+                            <p class="result1-text">Consultoria é a chave para impulsionar negócios! ️<br> Esses profissionais são os experts em otimizar empresas. 
+                                Tem olhar estratégico, desvendam desafios e indicam os melhores caminhos para a empresa decolar. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Botão no canto inferior direito -->
+                <button class="btn-redirect" onclick="window.location.href='../resultado/vestibulinho.html'">Conheça o Vestibulinho!</button>
+            `;
+
+            // Atualiza o conteúdo da página
+            document.getElementById('page-content').innerHTML = novoConteudo;
+        }
+
+        document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', function() {
+        // Remove a classe 'active' de todos os links
+        document.querySelectorAll('.nav-link').forEach(navLink => {
+            navLink.classList.remove('active');
+        });
+
+        // Adiciona a classe 'active' ao link clicado
+        this.classList.add('active');
+    });
+});
+
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

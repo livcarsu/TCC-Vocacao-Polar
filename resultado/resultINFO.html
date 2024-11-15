@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="img/Teste-vocacional.ico">
+    <title>Resultado 2</title>
+    <link rel="stylesheet" href="result.css">
+    <style>
+        /* Adicione estilos básicos para visualização */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .btn-navigate {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #13446a;
+            color: white;
+            border: none;
+            border-radius: 5px; 
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .btn-navigate:hover {
+            background-color: #0366cf;
+        }
+    </style>
+</head>
+<body>
+    <div id="page-content">
+        <div class="left-title">INFORMÁTICA PARA INTERNET</div>
+        
+        <div class="image-container2">
+            <img src="../img/ursoresult.png" alt="Iceberg com o urso mascote">
+        </div>
+
+        <div class="result2-container">
+            <div class="result2">
+                <div class="result2-header">
+                    <ul class="nav nav-tabs result2-header-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="true" href="#content1" onclick="showContent('content1')">Perfil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#content2" onclick="showContent('content2')">Campo 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#content3" onclick="showContent('content3')">Campo 2</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="result2-body">
+                    <div id="content1" class="tab-content">
+                        <h5 class="result2-title">Criador Digital</h5>
+                        <p class="result2-text">Você é criativo, gosta de tecnologia e sempre 
+                            procura novas formas de fazer as coisas. 
+Com sua mente inquieta e apaixonada por inovação, você está sempre buscando soluções criativas e
+ eficientes para os desafios do dia a dia.<br>
+
+ <br>
+<strong> Habilidades:</strong><br>
+
+- Criatividade<br>
+- Adaptabilidade<br>
+- Resolução de problemas<br>
+- Trabalho em equipe<br>
+- Aprendizado contínuo<br>
+Você é um profissional capaz de transformar ideias em realidade.
+Sua facilidade para aprender novas ferramentas e resolver problemas te torna um diferencial em
+projetos que exigem inovação e criatividade.
+ </p>
+                    </div>
+                    <div id="content2" class="tab-content" style="display: none;">
+                        <h5 class="result2-title">Informática para Internet</h5>
+                        <p class="result2-text"><strong> Seu curso mais compatível é o de Informática para Internet!</strong>
+<br>
+                            Esse curso é ideal para quem tem paixão por tecnologia e quer aprender a criar soluções 
+                            digitais inovadoras.<br>
+                            <br>
+                            Ingressando na ETEC, você aprenderá sobre:
+                            <br>
+                            - Programação<br>
+                            - Design<br>
+                            - Desenvolvimento web<br>
+                            Você vai estudar como transformar ideias em produtos digitais, utilizando as mais recentes 
+                            tecnologias e ferramentas do mercado. Com esse curso, você estará preparado para trabalhar
+                             em diversas áreas,
+                             como desenvolvimento de software, design de interfaces e gerenciamento de projetos digitais.</div>
+                    <div id="content3" class="tab-content" style="display: none;">
+                        <h5 class="result2-title">Marketing</h5>
+                        <p class="result2-text"><strong> Você também pode se interessar por Marketing!</strong><br>
+                            Esse curso é ideal para quem tem interesse em entender como as empresas se conectam com o público e quer aprender 
+                            a criar estratégias para impulsionar negócios.<br>
+                            <br>
+                             Ingressando na ETEC, você aprenderá sobre:<br>
+                            
+                            - Estratégias de vendas<br>
+                            - Comportamento do consumidor<br>
+                             - Desenvolvimento de campanhas publicitárias<br>
+                             - Marketing digital<br>
+                             - Redes sociais<br>
+                             Você vai estudar como criar e implementar estratégias de marketing eficazes, utilizando as mais recentes ferramentas e tendências do mercado. Com esse curso, você estará preparado para trabalhar em diversas áreas, como agências de publicidade,
+                             departamentos de marketing de empresas e como profissional autônomo. </div>
+            </div>
+        </div>
+
+        <a href="#" class="btn-navigate" onclick="alterarConteudo()">Conheça as áreas de atuação!</a>
+    </div>
+
+    <script>
+        function showContent(id) {
+            // Esconde todos os conteúdos
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => content.style.display = 'none');
+            
+            // Mostra o conteúdo selecionado
+            document.getElementById(id).style.display = 'block';
+        }
+
+        function alterarConteudo() {
+            const novoConteudo = `
+                <div class="left-block">
+                    <h2>Aqui estão duas áreas que você poderá atuar futuramente: </h2>
+                </div> 
+
+                <div class="content">
+                    <div class="result1">
+                        <img src="../img/desen.png" alt="Imagem 1" class="result1-img-top">
+                        <div class="result1-body">
+                            <h3 class="result1-title">Desenvolvedor Web</h3>
+                            <p class="result1-text">Esses são os profissionais que criam os sites e aplicativos que vemos na internet. 
+                                Eles programam para que as páginas sejam funcionais, rápidas e bonitas, e protegem as informações dos usuários. </p>
+                        </div>
+                    </div>
+
+                    <div class="result1">
+                        <img src="../img/frontback.png" alt="Imagem 2" class="result1-img-top">
+                        <div class="result1-body">
+                            <h3 class="result1-title">Programador Front-End e Back-End</h3>
+                            <p class="result1-text">O programador front-end cria o visual e a parte interativa para atrair o usuário em sites e apps, 
+                                enquanto o programador back-end faz toda a estrutura de funcionamento por trás, como o gerenciamento de dados e servidores. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Botão no canto inferior direito -->
+                <button class="btn-redirect" onclick="window.location.href='../resultado/vestibulinho.html'">Conheça o Vestibulinho!</button>
+            `;
+
+            // Atualiza o conteúdo da página
+            document.getElementById('page-content').innerHTML = novoConteudo;
+        }
+
+        document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', function() {
+        // Remove a classe 'active' de todos os links
+        document.querySelectorAll('.nav-link').forEach(navLink => {
+            navLink.classList.remove('active');
+        });
+
+        // Adiciona a classe 'active' ao link clicado
+        this.classList.add('active');
+    });
+});
+
+    </script>
+     <script src="script.js"></script>
+</body>
+</html>

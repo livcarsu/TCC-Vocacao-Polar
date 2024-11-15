@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Cards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+        }
+        .card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 400px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        .card-title {
+            padding: 15px 0;
+            font-size: 1.8em;
+            
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <a href="./memory/index.html" class="card">
+        <img src="./jogos/memory.png" alt="Card 1">
+        <div class="card-title">Memoria</div>
+    </a>
+    <a href="./stick/index.html" class="card">
+        <img src="./jogos/stick.PNG" alt="Card 2">
+        <div class="card-title">Stick</div>
+    </a>
+    <a href="./fruit-main/fruitNinja.html" class="card">
+        <img src="./jogos/ninja.png" alt="Card 3">
+        <div class="card-title">Fruit</div>
+    </a>
+</div>
+
+</body>
+</html>
