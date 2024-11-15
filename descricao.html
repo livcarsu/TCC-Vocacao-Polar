@@ -1,0 +1,100 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/png" href="img/Teste-vocacional.ico">
+        <link rel="stylesheet" href="style.css">
+        <title>Vocação Polar - Descongele seu futuro! </title>
+    </head>
+    <body> 
+        <style>
+            .btn1 {
+            width: 33vw;
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 150px; /* Reduz o padding para mover a imagem para a esquerda */
+            align-self: center;
+            position: relative; /* Necessário para posicionar a mensagem */
+        }
+
+        .imgAcess {
+            height: 6vh;
+            cursor: pointer;
+        }
+
+        .btn1:hover::after {
+            content: "Em desenvolvimento...";
+            position: absolute;
+            top: 100%; /* Posição abaixo da imagem */
+            right: 55px; /* Ajuste para posicionar a caixa um pouco mais à esquerda */
+            background-color: #ffffff; /* Cor de fundo da caixa de texto */
+            color: #000000; /* Cor do texto */
+            padding: 20px; /* Aumenta o padding para tornar a caixa maior */
+            height: 300px; /* Altura da caixa de texto */
+            width: auto; /* Largura automática da caixa */
+            border-radius: 5px;
+            font-size: 1em; /* Aumenta o tamanho do texto */
+            white-space: nowrap;
+            margin-top: 5px; /* Espaço entre a imagem e a caixa de texto */
+            
+            /* Centralização do texto */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(65, 180, 247, 0.3);
+            z-index: 1;
+        }
+        </style>
+
+        <header>
+            <div class="img">
+                <a href="index.html">  <img src="img/logo.png"  alt="Logo Urso com a lapela" class="imgLogo"></a>
+              </div>
+
+            <nav id="nav-bar">
+                <ul>
+                    <li><a href="index.html">INÍCIO</a></li>
+                    <li><a href="descricao.html">DESCRIÇÃO</a></li>
+                    <li><a href="cursos.html">CURSOS</a></li>
+                </ul>
+            </nav>
+
+            <div class="btn1">
+                <img src="img/acess.png" alt="Botão de Acessibilidade" class="imgAcess">  
+              </div>
+        </header>
+
+
+
+        <main class="mainDescricao">
+            <div class="left_container" id="left_container"> 
+
+                <div class="caixa_texto">
+                    <h2>Qual nosso objetivo?</h2>
+                    <p> Sabemos o quão difícil e indeciso é descobrir sua vocação profissional, por isso estamos aqui para te ajudar e encontrar seu curso ideal.</p>
+                </div>
+
+                <img src="img/cursoIdeal.png" alt="Mulher com um Diploma na Mão">
+                
+            </div>
+
+
+            <div class="right_container" id="right_container"> 
+                <img src="img/jovem.png" alt="Jovens estudantes com materiais congelados no fundo">
+
+                <div class="caixa_texto">
+                    <h2>Qual seu curso ideal?</h2>
+                    <p>Responda as perguntas com base em seus gostos e preferências para descobrir seu curso e perfil dominante! <strong> Está curioso para descobrir? </strong></p>
+                </div>
+            </div>
+        </main>
+
+    <div class="image-footer">
+            <img src="img/footer_descricao.png" alt="Neve com iglu ao canto inferior direito">
+        </div>
+
+   
+    </body>
+    </html>
