@@ -161,21 +161,18 @@ strong{
 }
 
 .content {
-    margin-left: 14%;
-    margin-top: 8%;
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
-    justify-content: center;
-    align-items: center;
-    width: 70%;
+    justify-content: space-evenly;
     box-sizing: border-box;
-  
+    align-items: center;
+    height: 100vh;
 }
 
 .result1 {
-    width: 480px;
-    height: 550px;
+    width: 520px;
+    height: 560px;
     background-color: #fff;
     border-radius: 10px;
     overflow: hidden;
